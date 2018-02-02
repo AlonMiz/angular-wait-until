@@ -14,7 +14,9 @@
     "url": "https://github.com/AlonMiz/angular-wait-until"
   },
   "homepage": "https://github.com/AlonMiz/angular-wait-until#readme",
-  "scripts": {},
+  "scripts": {
+    "test": "karma start --single-run"
+  },
   "keywords": [
     "angular",
     "wait",
