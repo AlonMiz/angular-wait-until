@@ -1,0 +1,41 @@
+{
+  "name": "angular-poll-until",
+  "version": "0.0.2",
+  "description": "Try repeatedly for a promise to be resolved/return true",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlonMiz/angular-wait-until.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlonMiz/angular-wait-until"
+  },
+  "homepage": "https://github.com/AlonMiz/angular-wait-until#readme",
+  "scripts": {},
+  "keywords": [
+    "angular",
+    "wait",
+    "until",
+    "promise"
+  ],
+  "author": "Alon Mizrahi",
+  "license": "ISC",
+  "dependencies": {
+    "poll-until-promise": "^1.2.1"
+  },
+  "devDependencies": {
+    "angular": "^1.6.9",
+    "angular-mocks": "^1.6.9",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jasmine-core": "^2.9.1",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="../node_modules/poll-until-promise/lib/poll-until-promise.min.js"></script>
+<script src="../angular-wait-until.js"></script>
+
+<body ng-app="waitUntil">
+
+  <div ng-controller="myController">
+    <p>Name :
+      <input type="text" ng-model="name">
+    </p>
+    <h1>Hello {{name}}</h1>
+    <h3 ng-if="error">Error: {{error}}</h3>
+  </div>
+
+  <script>
+    angular.module('waitUntil', ['angular.wait-until'])
+      .controller('myController', function ($scope, $q, WaitUntil) {
+        var myPromise = new WaitUntil();
+        var later = +Date.now() + 500;
+        $scope.error = 'no error';
+        myPromise
+          .stopAfter(1 * 1000)
+          .tryEvery(100)
+          .stopOnFailure(false) //Ignore errors
+          .execute(() => {
+            return $q((resolve, reject) => {
+              if (+Date.now() >= later) {
+                return resolve(true); //some truthy value
+              }
+              reject(false);
+            })
+          })
+          .then((value) => $scope.name = 'Yey')
+          .catch((err) => $scope.error = err);
+      });
+  </script>
+
+</body>
+
+</html>
