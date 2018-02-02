@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/AlonMiz/poll-until-promise.svg?branch=master)](https://travis-ci.org/AlonMiz/poll-until-promise)
-# Poll Until Promise
+[![Build Status](https://travis-ci.org/AlonMiz/angular-wait-until.svg?branch=master)](https://travis-ci.org/AlonMiz/angular-wait-until)
+# Angular Wait Until
 Wait until the executed promise resolved to a true value,
 Execute it every x milliseconds and stop after y milliseconds.
 
