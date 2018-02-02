@@ -1,5 +1,5 @@
 {
-  "name": "angular-poll-until",
+  "name": "angular-wait-until",
   "version": "0.0.2",
   "description": "Try repeatedly for a promise to be resolved/return true",
   "main": "index.js",
