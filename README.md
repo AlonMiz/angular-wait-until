@@ -40,7 +40,7 @@ Execute it every x milliseconds and stop after y milliseconds.
 
 ```
 
-## Further Features
+## Additional Features
 This repo is based on 
 [poll-until-promise](https://github.com/AlonMiz/poll-until-promise).
 There you can read about additional features and functionality 
