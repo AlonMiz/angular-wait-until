@@ -1,3 +1,3 @@
-require('./lib/angular-wait-until');
+require('./angular-wait-until');
 
 module.exports = 'angular-wait-until';
