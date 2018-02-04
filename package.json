@@ -1,7 +1,7 @@
 {
   "name": "angular-wait-until",
   "version": "0.0.5",
-  "description": "Try repeatedly for a promise to be resolved/return true",
+  "description": "Try repeatedly for a promise to be resolved",
   "main": "index.js",
   "directories": {
     "test": "test"
