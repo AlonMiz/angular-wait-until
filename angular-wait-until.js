@@ -12,7 +12,6 @@
         var mergedOptions = options || {};
         mergedOptions.setTimeout = $timeout;
         mergedOptions.Promise = $q;
-        mergedOptions.useNewPromise = false;
 
         return new WaitUntilPromiseModule(mergedOptions);
       }
