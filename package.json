@@ -17,7 +17,6 @@
   "scripts": {
     "test": "karma start --single-run --browsers ChromeHeadlessNoSandbox",
     "test-dev": "karma start"
-    
   },
   "keywords": [
     "angular",
@@ -28,7 +27,7 @@
   "author": "Alon Mizrahi",
   "license": "ISC",
   "dependencies": {
-    "poll-until-promise": "^1.2.1"
+    "poll-until-promise": "^1.2.2"
   },
   "devDependencies": {
     "angular": "^1.6.9",
